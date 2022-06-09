@@ -1,0 +1,32 @@
+program: main.py
+method: grid
+name: gamma_experiment_wiki_gamma1
+metric:
+    name: mae
+    goal: minimize
+parameters:
+    dataset:
+        value: wiki_chameleon_random_0.5
+    fix_gamma:
+        value: 1
+    gamma_value:
+        value: 1.0
+    n_layers:
+        value: 1
+    seed:
+        values: [913,914,915,916,917]
+    vi_layers:
+        value: 0
+    n_iterations:
+        value: 80000
+    lr:
+        value: 0.01
+    features:
+        value: 0
+    learn_noise_std:
+        value: 1
+    use_bias:
+        value: 1
+    save_pdf:
+        value: 0
+

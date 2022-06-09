@@ -1,0 +1,37 @@
+program: main.py
+method: grid
+name: synthetic
+metric:
+    name: mae
+    goal: minimize
+parameters:
+    dataset:
+        values:
+            - toy_gmrf42_random
+            - toy_gmrf42_2_layers_random
+            - toy_gmrf42_3_layers_random
+            - toy_gmrf42_4_layers_random
+            - toy_gmrf31_random
+            - toy_gmrf31_2_densified_random
+            - toy_gmrf31_3_densified_random
+            - toy_gmrf31_4_densified_random
+            - gmrf_prec_mix32_random
+    seed:
+        values: [913,914,915,916,917]
+    n_layers:
+        values: [1,2,3,4,5]
+    vi_layers:
+        value: 1
+    n_iterations:
+        value: 50000
+    lr:
+        value: 0.01
+    features:
+        value: 0
+    learn_noise_std:
+        value: 1
+    use_bias:
+        value: 1
+    save_pdf:
+        value: 0
+

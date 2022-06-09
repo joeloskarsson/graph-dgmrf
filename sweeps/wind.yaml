@@ -1,0 +1,30 @@
+program: main.py
+method: grid
+name: wind
+metric:
+    name: mae
+    goal: minimize
+parameters:
+    dataset:
+        values:
+            - "wind_speed_delaunay_random_0.5"
+            - "wind_speed_delaunay"
+    seed:
+        values: [913,914,915,916,917]
+    n_layers:
+        values: [1,2,3]
+    vi_layers:
+        value: 1
+    dist_weight:
+        value: 1
+    save_pdf:
+        value: 0
+    features:
+        value: 0
+    n_iterations:
+        value: 150000
+    lr:
+        value: 0.01
+    log_det_method:
+        value: "dad"
+

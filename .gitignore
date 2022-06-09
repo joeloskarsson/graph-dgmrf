@@ -1,0 +1,79 @@
+### Project Specific ###
+wandb
+dataset
+raw_data
+config.json
+sweeps
+*ipynb_checkpoints
+log_det_plots
+run_script.sh
+results_plotting/figures*
+results_plotting/illustration_graphs*
+start_runs.sh
+scripts
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+develop-eggs/
+lib64/
+parts/
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# pyenv
+.python-version
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# mkdocs documentation
+/site
+
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+
+# Auto-generated tag files
+tags
+
+# Persistent undo
+[._]*.un~
+
+# Coc configuration directory
+.vim
+

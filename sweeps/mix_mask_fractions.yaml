@@ -1,0 +1,34 @@
+program: main.py
+method: grid
+name: mix_mask_fractions
+metric:
+    name: mae
+    goal: minimize
+parameters:
+    dataset:
+        values:
+            - gmrf_prec_mix32_random_0.05
+            - gmrf_prec_mix32_random_0.2
+            - gmrf_prec_mix32_random_0.4
+            - gmrf_prec_mix32_random_0.6
+            - gmrf_prec_mix32_random_0.8
+            - gmrf_prec_mix32_random_0.95
+    seed:
+        values: [913,914,915,916,917]
+    n_layers:
+        value: 3
+    vi_layers:
+        value: 1
+    n_iterations:
+        value: 50000
+    lr:
+        value: 0.01
+    features:
+        value: 0
+    learn_noise_std:
+        value: 1
+    use_bias:
+        value: 1
+    save_pdf:
+        value: 0
+

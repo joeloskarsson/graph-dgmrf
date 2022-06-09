@@ -1,0 +1,25 @@
+program: main.py
+method: grid
+name: cal
+metric:
+    name: mae
+    goal: minimize
+parameters:
+    dataset:
+        value: "cal_delaunay_random_0.5"
+    n_layers:
+        values: [1,2,3]
+    seed:
+        values: [913,914,915,916,917]
+    features:
+        values: [0,1]
+    dist_weight:
+        value: 1
+    save_pdf:
+        value: 0
+    n_iterations:
+        value: 80000
+    lr:
+        value: 0.01
+    vi_layers:
+        value: 1

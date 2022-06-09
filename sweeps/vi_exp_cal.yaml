@@ -1,0 +1,26 @@
+program: main.py
+method: grid
+name: vi_exp_cal
+metric:
+    name: mae
+    goal: minimize
+parameters:
+    dataset:
+        value: "cal_delaunay_random_0.5"
+    n_layers:
+        values: [1,3]
+    seed:
+        values: [913,914,915,916,917]
+    features:
+        value: 0
+    dist_weight:
+        value: 1
+    save_pdf:
+        value: 0
+    n_iterations:
+        value: 80000
+    lr:
+        value: 0.01
+    vi_layers:
+        values: [0,2]
+
