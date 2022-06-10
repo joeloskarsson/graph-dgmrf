@@ -8,7 +8,7 @@ This repository contains the code for our paper *Scalable Deep Gaussian Markov R
 If you find our work useful, please cite:
 ```
 @inproceedings{graph_dgmrf,
-    author = {Oskarsson, Joel and Sidén, Per and Lindsten, Fredrik},
+    author = {Oskarsson, Joel and Sid{\'e}n, Per and Lindsten, Fredrik},
     title = {Scalable Deep {G}aussian {M}arkov Random Fields for General Graphs},
     booktitle = {Proceedings of the 39th International Conference on Machine Learning},
     year = {2022}
