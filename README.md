@@ -3,7 +3,7 @@
   <img src="results_plotting/header_image.png"/>
 </p>
 
-This repository contains the code for our paper *Scalable Deep Gaussian Markov Random Fields for General Graphs* (paper link TBA).
+This repository contains the code for our paper [*Scalable Deep Gaussian Markov Random Fields for General Graphs*](https://arxiv.org/abs/2206.05032).
 
 If you find our work useful, please cite:
 ```
