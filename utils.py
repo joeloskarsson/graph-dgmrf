@@ -43,6 +43,10 @@ def load_dataset(ds_name, ds_dir=constants.DS_DIR):
                 with open(graph_path, "rb") as graph_file:
                     graph = pickle.load(graph_file)
 
+                    if not "_store" in graph.__dict__:
+                        # Convert from pre-2.0 pyg Data object
+                        graph = ptg.data.Data(**graph.__dict__)
+
                 graphs[var_name] = graph.to(device)
 
     return graphs

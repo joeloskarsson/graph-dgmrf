@@ -17,22 +17,21 @@ If you find our work useful, please cite:
 
 ## Installation
 
-* Use python 3.8.
-* Install required packages specified in `requirements.txt`. Follow instructions on the [PyTorch webpage](https://pytorch.org/get-started/previous-versions/) for how to set up version 1.7.1 with GPU support on your system.
-* Install PyTorch Geometric version 1.6.3. This can be done by running
+* Use python 3.9.
+* Install required packages specified in `requirements.txt`. Follow instructions on the [PyTorch webpage](https://pytorch.org/get-started/previous-versions/) for how to set up version 1.13.1 with GPU support on your system.
+* Install PyTorch Geometric version 2.2.0. This can be done by running
 ```
-TORCH="1.7.1"
+TORCH="1.13.1"
 CUDA="cu110"
 
-pip install torch-scatter==2.0.5 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
-pip install torch-sparse==0.6.8 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
-pip install torch-cluster==1.5.9 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install pyg-lib==0.1.0 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-scatter==2.1.0 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-sparse==0.6.16 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+pip install torch-cluster==1.6.0 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
 pip install torch-spline-conv==1.2.1 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
-pip install torch-geometric==1.6.3
+pip install torch-geometric==2.2.0
 ```
-You will have to adjust the `CUDA` variable to match the CUDA version on your system or to run on CPU. See the [installation webpage](https://pytorch-geometric.readthedocs.io/en/1.6.3/notes/installation.html) for more information.
-
-There are plans to update the code to newer versions of these packages when time permits.
+You will have to adjust the `CUDA` variable to match the CUDA version on your system or to run on CPU. See the [installation webpage](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html) for more information.
 
 ### (Only for baselines)
 If you want to train and evaluate the baseline models some additional installation is required.
